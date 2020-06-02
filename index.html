@@ -6,7 +6,12 @@
 <div id="manifesto">
  <h1> <b>The BAG Manifesto:</b>
 <br><br>
-   BAG is <a href="">community</a><br>
+<div class="scrollerer">  <div class="scrolling">
+          <h4> BAG is <a href="">community</a> </h4>  </div><div class="scrolling" aria-hidden="true">
+          <h4> BAG is <a href="">community</a></h4>  </div><div class="scrolling" aria-hidden="true">
+          <h4> BAG is <a href="">community</a> </h4>  </div><div class="scrolling" aria-hidden="true">
+          <h4> BAG is <a href="">community</a></h4>  </div> </div>
+<br>
 BAG is <a href="">craft</a><br>
 BAG is <a href="">care</a><br>
 BAG is <a href="">sharing</a><br>
@@ -45,7 +50,32 @@ h1 {
   font-size: 30px;
   color: brown;
   }
-  
+ 
+ .scrollerer {
+  overflow: hidden;
+  white-space: nowrap;
+    padding: 3px;
+    border-radius:28px;
+    margin: 0px;
+   -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+}
+
+.scrolling {
+  animation: marquee 4s linear infinite;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
 a {
   font-family: sans-serif, arial;
   font-size: 30px;
