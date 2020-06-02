@@ -6,25 +6,25 @@
   
   <style>   
     
-.parent { 
-    position:relative; 
+.test {
+  background: skyblue;
+  border-radius: 5px 50%;
+  height: 100px;
+  margin: 150px auto;
+  transform-origin: left top;
+  transition: transform 3s;
+  width: 100px;
+
+  &:hover {
+    transform: rotate(500deg);
+  }
 }
-    
-.h1.parent { 
-    position:absolute; 
-    top:0px; 
-    left:0px; 
-}
-    
-.parent:hover { 
-    top:-15px; 
-}  
     
   </style>
   
     <body>
       
-<div class="parent">
+<div class="test">
   <h1> test </h1> 
 </div>
       
